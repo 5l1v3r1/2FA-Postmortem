@@ -5,7 +5,6 @@
 
 require 'msf/core'
 require 'msf/core/post/file'
-require 'msf/core/post/windows'
 require 'msf/core/post/common'
 require 'rex'
 require 'sshkey'
@@ -15,7 +14,6 @@ require "find"
 class MetasploitModule < Msf::Post
 
  include Msf::Post::File
- include Msf::Post::Windows::Registry
  include Msf::Post::Unix
 
 
@@ -114,6 +112,10 @@ def reveal(pf,sf)
       print_status("Parsing looted information to the 2FAssassin instance")
       FileUtils.cp_r "/root/.msf4/loot/.", "/root/2fassassin/loot/"
       print_status("Starting 2FAssassin now")
+     # not yet finish here
+     # code unfinished
+     # code unfinished
+     # code unfinished
 
       print_status ("Show all keys found on local system:")
       folder="/"
