@@ -1,0 +1,59 @@
+# 2FA-Postmortem
+Parse the meterpreter session to 2FAssassin 
+
+msf > search postmortem
+
+Matching Modules
+================
+
+   Name                        Disclosure Date  Rank    Description
+   ----                        ---------------  ----    -----------
+   post/2fassassin/postmortem                   normal  2FA-Postmortem
+
+
+msf > info post/2fassassin/postmortem
+
+
+     _                   _
+   _( )                 ( )_
+  (_, |      __ __      | ,_)
+     |'|    /  ^  |    /'/
+      '|'|,/|      |,/'/'
+        '|| []   [] |/'
+          (_  /^|  _)
+            |  ~  /
+            /HHHHH|
+          /'/{^^^}|'|
+      _,/'/'  ^^^  '|'|,_
+     (_, |           | ,_)
+       (_)           (_)
+  
+       +----------------+
+       | 2FA-Postmortem |
+       +----------------+
+
+
+       Name: 2FA-Postmortem
+     Module: post/2fassassin/postmortem
+   Platform: Linux
+       Arch: x86
+       Rank: Normal
+
+Provided by:
+  Maxwell Koh
+
+Basic options:
+
+  Name        Current Setting        Required  Description
+  ----        ---------------        --------  -----------
+  CMDEXEC                              yes       Command to execute
+  SESSION                              yes       The session to run this module on.
+  SYSTEMINFO  TRUE                     yes       True if you want to get system info
+
+Description:
+  Parse meterpreter session to 2FAssassin. There is no need to run 
+  2FAassasin separately. Disregard which method you applied to exploit 
+  into the target system, you can always bring the Meterpreter session 
+  back to the 2FAssassin instance.
+
+msf > 
